@@ -4,6 +4,13 @@ import socket
 
 LOG = logging.getLogger(__name__)
 
+class Print(object):
+    def __init__(self, configuration):
+        pass
+    def send(self, metrics):
+        raise Exception('boom')
+        print repr(metrics)
+
 
 class Statsd(object):
     def __init__(self, configuration):
