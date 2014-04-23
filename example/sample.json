@@ -27,7 +27,7 @@
     },
 
     "unused_label" : {
-        "target": "example:sample.do_it", 
+        "target": "example.sample:do_it", 
         "collector": "time",
         "label_extractor": "ArgExtract",
         "notifiers": ["statsd"]
